@@ -6,3 +6,4 @@ export interface Identifialbe {
 }
 
 export type Optional<T> = T | undefined;
+

@@ -1,4 +1,4 @@
-import { Identifialbe } from "./common-types";
+import { Identifialbe } from "../common/common-types.js";
 
 export interface Person extends Identifialbe{
     firstName: string;

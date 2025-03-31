@@ -1,4 +1,4 @@
-import { IdType } from "./common-types";
+import { IdType } from "../common/common-types";
 import { Contact, Person } from "./person";
 
 export interface User extends Person {
@@ -19,10 +19,10 @@ export class UserBase implements User {
     role: Role = Role.READER
     constructor(
         // id: IdType,
-        public password: string,
         public firstName: string,
         public lastName: string,
         public email: string,
+        public password: string,
         public contact?: Contact | undefined){}
 
     get salutation() {
@@ -37,14 +37,14 @@ export class UserBase implements User {
 
 export type UserCreateDto = Omit<User, "id">;
 
-class Reader extends UserBase {
+export class Reader extends UserBase {
     role = Role.READER
     // id: IdType = undefined;
     constructor(
-        public password: string,
         public firstName: string,
         public lastName: string,
         public email: string,
+        public password: string,
         public contact?: Contact | undefined){
             super(password,firstName,lastName,email,contact)
     }
@@ -55,38 +55,38 @@ class Reader extends UserBase {
     }    
 }
 
-class Admin extends UserBase {
+export class Admin extends UserBase {
     role = Role.ADMIN
     // id: IdType = undefined;
     constructor(
-        public password: string,
         public firstName: string,
         public lastName: string,
         public email: string,
+        public password: string,
         public contact?: Contact | undefined){
             super(password,firstName,lastName,email,contact)
     }
     
 
     toString(){
-        return `READER: ${super.toString()}`;
+        return `Admin: ${super.toString()}`;
     }    
 }
 
-class Author extends UserBase {
+export class Author extends UserBase {
     role = Role.AUTHOR
     // id: IdType = undefined;
     constructor(
-        public password: string,
         public firstName: string,
         public lastName: string,
         public email: string,
+        public password: string,
         public contact?: Contact | undefined){
             super(password,firstName,lastName,email,contact)
     }
     
 
     toString(){
-        return `READER: ${super.toString()}`;
+        return `Author: ${super.toString()}`;
     }    
 }
