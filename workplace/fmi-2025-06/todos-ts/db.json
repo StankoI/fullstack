@@ -1,0 +1,56 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "text": "something1.",
+      "status": 1
+    },
+    {
+      "id": "2",
+      "text": "something2.",
+      "status": 1
+    },
+    {
+      "id": "3",
+      "text": "something3.",
+      "status": 1
+    },
+    {
+      "id": "ab68",
+      "text": "kerem",
+      "status": 1
+    },
+    {
+      "id": "049a",
+      "text": "ivan",
+      "status": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

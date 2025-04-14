@@ -1,10 +1,14 @@
+import { IdType } from "../common/common-types";
+
 export class Todo {
-    static nextId = 0;
-    id = ++Todo.nextId;
+    id: IdType = '';
+    // static nextId = 0;
+    // id = ++Todo.nextId;
+    static className = 'Todo';
     constructor(
         public text: string,
         public status: TodoStatus = TodoStatus.ACTIVE
-    ){console.log(`!!! Todo ${this.id}`)}
+    ){}
 }
 
 export enum TodoStatus {
