@@ -1,21 +1,23 @@
-// import React from "react";
-import { Todo, TodoStatus } from "../model/todo";
+import { Todo, TodoStatus } from '../model/todo';
 import './TodoItem.css';
 
 type Props = {
     todo: Todo;
-    changeStatus: (status: TodoStatus) => void
+    changeStatus: (Todo: Todo) => void;
 }
 
-const TodoItem = ({todo, changeStatus}: Props) => {
-    return(
-        <div className="TodoItem-card">
-        <div key ={todo.id} className="content">{todo.id}: {todo.text}[{TodoStatus[todo.status]}]</div>
-        <div key ={todo.id} className="buttons">
-            <button className="button" onClick={() => changeStatus(TodoStatus.COMPLETED)}>Complete</button>
+const TodoItem = ({ todo, changeStatus }: Props) => {
+    function completeTodo() {
+        const updatedTodo = { ...todo, status: TodoStatus.COMPLETED }; 
+        changeStatus(updatedTodo);
+    }
+    return (
+        <div className='TodoItem-card'>
+            <div className='content'>{todo.id}: {todo.text} [{TodoStatus[todo.status]}]</div>
+            <div className='buttons'>
+                <button className='button' onClick={completeTodo}>Complete</button>
+            </div>
         </div>
-        </div>
-
     )
 }
 
