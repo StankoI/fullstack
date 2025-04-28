@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react';
 import { Todo, TodoStatus } from '../model/todo'
-// import './TodoInput.css'
+import './TodoInput.css'
 
 type Props = {
     onCreateTodo: (todo: Todo) => void;

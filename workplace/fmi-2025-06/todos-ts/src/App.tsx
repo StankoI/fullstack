@@ -19,8 +19,18 @@ function App() {
         setTodos(todos);
     },[])
     
-    function updateTodo(todo: Todo) {
-        setTodos(oldTodos => oldTodos.map(td => td.id === todo.id ? todo : td))
+    async function updateTodo(todo: Todo) {
+
+        try{
+            const updated = await API.update(Todo, todo);
+            setTodos(oldTodo => oldTodo.map(td => td.id === updated.id? updated: td)); 
+        }
+        catch(err){
+            console.log(err);
+        }
+
+
+        // setTodos(oldTodos => oldTodos.map(td => td.id === todo.id ? todo : td))
     }
 
     async function createTodo(todo: Todo) {
@@ -35,19 +45,25 @@ function App() {
         }
     }
 
-    function removeTodo(id: IdType) {
-        setTodos(prev => prev.filter(todo => todo.id !== id));
+    async function removeTodo(id: IdType) {
+
+        try{
+            await API.deleteById(Todo,id);
+            setTodos(prev => prev.filter(todo => todo.id !== id));
+        } 
+        catch(err){
+            console.log(err);
+        }
     }
 
     return (
         <>
-            <h1>React TODOS Typescript Demo</h1>
+            <h1>My to do list</h1>
             <TodoInput onCreateTodo={createTodo} onError={() => { }} />
             <TodoList todos={todos} changeStatus={updateTodo} onRemoveTodo={removeTodo} />
         </>
     )
 
-    //method delete 
 }
 
 export default App

@@ -26,7 +26,6 @@ export class ApiClient {
 
     async update<V extends Identifiable>( ctor: EntityConstructor<V>, entity: V){
 
-
         return this.fetchData(`${this.baseUrl}/${ctor.className.toLowerCase()}s/${entity.id}`, 
             {
                 method: 'PUT', 
