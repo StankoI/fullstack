@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": "769c",
-      "text": "da si vzema vis",
-      "status": 2
-    },
-    {
       "id": "8df9",
       "text": "da si vzema fullstack",
       "status": 2
@@ -18,6 +13,11 @@
     {
       "id": "4ad9",
       "text": "stefan",
+      "status": 2
+    },
+    {
+      "id": "2e69",
+      "text": "kerem",
       "status": 1
     }
   ]
