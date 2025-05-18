@@ -1,23 +1,23 @@
 {
   "todos": [
     {
-      "id": "8df9",
-      "text": "da si vzema fullstack",
-      "status": 2
-    },
-    {
-      "id": "76f9",
-      "text": "da si vzema vsichko ostanalo ",
-      "status": 2
-    },
-    {
-      "id": "4ad9",
-      "text": "stefan",
-      "status": 2
-    },
-    {
       "id": "2e69",
       "text": "kerem",
+      "status": 2
+    },
+    {
+      "id": "95f4",
+      "text": "1",
+      "status": 1
+    },
+    {
+      "id": "7d14",
+      "text": "1",
+      "status": 1
+    },
+    {
+      "id": "202b",
+      "text": "ivan",
       "status": 1
     }
   ]

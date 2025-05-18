@@ -13,11 +13,6 @@ const TodoFilter = ({filter, onFilterChange}: Props) => {
     const changeFilter = useCallback((event: ChangeEvent<HTMLSelectElement>) => onFilterChange(parseInt(event.target.value)),
         [onFilterChange]);
 
-    // function changeFilter(event: ChangeEvent<HTMLSelectElement>)
-    // {
-    //     onFilterChange(parseInt(event.target.value))
-    // }
-
     return(
         <select value={filter} onChange={changeFilter}>
             <option value={undefined}>All</option>

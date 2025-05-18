@@ -49,7 +49,6 @@ function App() {
     }
 
     async function removeTodo(id: IdType) {
-
         try{
             await API.deleteById(Todo,id);
             setTodos(prev => prev.filter(todo => todo.id !== id));

@@ -1,0 +1,15 @@
+{
+  "products": [
+    {
+      "id": "1ce7",
+      "name": "Samsung",
+      "info": "aaa",
+      "price": 150,
+      "category": "Computers",
+      "imageUrl": "https://images.app.goo.gl/QiRUQ9mZ3AvbAAj98",
+      "tags": [
+        "new computer"
+      ]
+    }
+  ]
+}

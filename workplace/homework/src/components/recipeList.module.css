@@ -1,0 +1,11 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+    gap: 20px;
+}

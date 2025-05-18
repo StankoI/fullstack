@@ -1,0 +1,38 @@
+.filter-container {
+  padding: 1rem;
+  background: #242424;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.filter-container input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}

@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": "u123",
+      "name": "Иван Цветков",
+      "username": "ivan",
+      "password": "test123!",
+      "gender": "male",
+      "role": "user",
+      "avatarUrl": "",
+      "bio": "",
+      "status": "active",
+      "createdAt": "2025-05-17T12:00:00Z",
+      "updatedAt": "2025-05-17T12:00:00Z"
+    },
+    {
+      "id": "u124",
+      "name": "стефан Герджиков",
+      "username": "stefcho",
+      "password": "test123!",
+      "gender": "female",
+      "role": "user",
+      "avatarUrl": "",
+      "bio": "",
+      "status": "active",
+      "createdAt": "2025-05-17T12:00:00Z",
+      "updatedAt": "2025-05-17T12:00:00Z"
+    },
+    {
+      "id": "441a",
+      "name": "Станислав Игов",
+      "username": "stuck",
+      "password": "123456789",
+      "gender": "male",
+      "role": "admin",
+      "avatarUrl": "\"./public/vite.svg\"",
+      "bio": "кур за стефан ",
+      "status": "active",
+      "createdAt": "2025-05-17T13:05:54.779Z",
+      "updatedAt": "2025-05-17T13:05:54.779Z"
+    }
+  ],
+  "recipes": [
+    {
+      "userId": "u123",
+      "name": "Шопска салата",
+      "shortDescription": "Класическа българска салата.",
+      "timeToBeCooked": 10,
+      "products": [
+        "домати",
+        "краставици",
+        "лук",
+        "сирене"
+      ],
+      "photo": "./public/vite.svg",
+      "longDescription": "Нарежете всичко и смесете със зехтин.",
+      "tags": [
+        "салата",
+        "българско"
+      ],
+      "lastEditTime": "2025-05-17T15:36:30.564Z",
+      "id": "r1"
+    },
+    {
+      "id": "r2",
+      "userId": "u123",
+      "name": "Шопска салата",
+      "shortDescription": "Класическа българска салата.",
+      "timeToBeCooked": 15,
+      "products": [
+        "домати",
+        "краставици",
+        "лук",
+        "сирене"
+      ],
+      "photo": "./public/vite.svg",
+      "longDescription": "Нарежете всичко и смесете със зехтин.",
+      "tags": [
+        "салата",
+        "българско"
+      ],
+      "sharedTime": "2025-05-17T10:00:00Z",
+      "lastEditTime": "2025-05-17T10:00:00Z"
+    },
+    {
+      "userId": "u123",
+      "name": "Шопска салата",
+      "shortDescription": "Класическа българска салата.",
+      "timeToBeCooked": 11,
+      "products": [
+        "домати",
+        "краставици",
+        "лук",
+        "сирене"
+      ],
+      "photo": "./public/vite.svg",
+      "longDescription": "Нарежете всичко и смесете със зехтин.",
+      "tags": [
+        "салата",
+        "българско"
+      ],
+      "lastEditTime": "2025-05-17T15:36:42.937Z",
+      "id": "r3"
+    },
+    {
+      "id": "r4",
+      "userId": "u123",
+      "name": "Шопска салата",
+      "shortDescription": "Класическа българска салата.",
+      "timeToBeCooked": 15,
+      "products": [
+        "домати",
+        "краставици",
+        "лук",
+        "сирене"
+      ],
+      "photo": "./public/vite.svg",
+      "longDescription": "Нарежете всичко и смесете със зехтин.",
+      "tags": [
+        "салата",
+        "българско"
+      ],
+      "sharedTime": "2025-05-17T10:00:00Z",
+      "lastEditTime": "2025-05-17T10:00:00Z"
+    }
+  ]
+}
